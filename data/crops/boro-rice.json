@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "crop": {
+    "id": "boro_rice",
+    "name_bn": "বোরো ধান",
+    "name_en": "Boro Rice",
+    "source": {
+      "organization": null,
+      "document": null,
+      "url": null,
+      "page": null,
+      "status": "TODO_VERIFY"
+    }
+  },
+  "season_suitability": [
+    {
+      "season_id": null,
+      "districts": [],
+      "soil_types": [],
+      "irrigation_availability": null,
+      "suitability": {
+        "value": null,
+        "status": "TODO_VERIFY",
+        "source": {
+          "organization": null,
+          "document": null,
+          "url": null,
+          "page": null
+        }
+      }
+    }
+  ],
+  "fertilizer": {
+    "dose_unit": "kg/ha",
+    "recommendations": [
+      {
+        "fertilizer_name": null,
+        "total_dose": {
+          "value": null,
+          "unit": "kg/ha",
+          "status": "TODO_VERIFY",
+          "source": {
+            "organization": null,
+            "document": null,
+            "url": null,
+            "page": null
+          }
+        },
+        "applications": [
+          {
+            "stage": null,
+            "percentage_of_total": null,
+            "timing": null,
+            "status": "TODO_VERIFY",
+            "source": {
+              "organization": null,
+              "document": null,
+              "url": null,
+              "page": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "irrigation": {
+    "recommendations": [
+      {
+        "crop_stage": null,
+        "water_requirement": {
+          "value": null,
+          "unit": null,
+          "status": "TODO_VERIFY",
+          "source": {
+            "organization": null,
+            "document": null,
+            "url": null,
+            "page": null
+          }
+        },
+        "timing": {
+          "value": null,
+          "status": "TODO_VERIFY",
+          "source": {
+            "organization": null,
+            "document": null,
+            "url": null,
+            "page": null
+          }
+        }
+      }
+    ]
+  },
+  "harvest": {
+    "days_after_planting": {
+      "value": null,
+      "unit": "days",
+      "status": "TODO_VERIFY",
+      "source": {
+        "organization": null,
+        "document": null,
+        "url": null,
+        "page": null
+      }
+    }
+  },
+  "diseases_and_pests": [
+    {
+      "id": null,
+      "name_bn": null,
+      "name_en": null,
+      "symptoms": [],
+      "favorable_weather_conditions": [],
+      "prevention": [],
+      "management": [],
+      "source": {
+        "organization": null,
+        "document": null,
+        "url": null,
+        "page": null
+      },
+      "status": "TODO_VERIFY"
+    }
+  ],
+  "weather_rules": [
+    {
+      "id": null,
+      "hazard_name": null,
+      "parameter": null,
+      "operator": null,
+      "threshold": {
+        "value": null,
+        "unit": null,
+        "status": "TODO_VERIFY",
+        "source": {
+          "organization": null,
+          "document": null,
+          "url": null,
+          "page": null
+        }
+      },
+      "assessment_message": null
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "seasons": [
+    {
+      "id": "rabi",
+      "name_bn": "রবি মৌসুম",
+      "name_en": "Rabi Season",
+      "start_month": null,
+      "end_month": null,
+      "status": "TODO_VERIFY",
+      "source": {
+        "organization": null,
+        "document": null,
+        "url": null,
+        "page": null
+      }
+    },
+    {
+      "id": "kharif_1",
+      "name_bn": "খরিফ-১ মৌসুম",
+      "name_en": "Kharif-I Season",
+      "start_month": null,
+      "end_month": null,
+      "status": "TODO_VERIFY",
+      "source": {
+        "organization": null,
+        "document": null,
+        "url": null,
+        "page": null
+      }
+    },
+    {
+      "id": "kharif_2",
+      "name_bn": "খরিফ-২ মৌসুম",
+      "name_en": "Kharif-II Season",
+      "start_month": null,
+      "end_month": null,
+      "status": "TODO_VERIFY",
+      "source": {
+        "organization": null,
+        "document": null,
+        "url": null,
+        "page": null
+      }
+    }
+  ]
+}

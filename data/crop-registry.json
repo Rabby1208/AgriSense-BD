@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "crops": [
+    {
+      "id": "boro_rice",
+      "name_bn": "বোরো ধান",
+      "name_en": "Boro Rice",
+      "file": "crops/boro-rice.json",
+      "active": true
+    },
+    {
+      "id": "potato",
+      "name_bn": "আলু",
+      "name_en": "Potato",
+      "file": "crops/potato.json",
+      "active": true
+    },
+    {
+      "id": "tomato",
+      "name_bn": "টমেটো",
+      "name_en": "Tomato",
+      "file": "crops/tomato.json",
+      "active": true
+    },
+    {
+      "id": "mustard",
+      "name_bn": "সরিষা",
+      "name_en": "Mustard",
+      "file": "crops/mustard.json",
+      "active": true
+    }
+  ]
+}

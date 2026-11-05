@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "locations": [
+    {
+      "district_id": "gazipur",
+      "district_name_bn": "গাজীপুর",
+      "district_name_en": "Gazipur",
+      "upazilas": [
+        {
+          "id": "gazipur_sadar",
+          "name_bn": "গাজীপুর সদর",
+          "name_en": "Gazipur Sadar"
+        }
+      ]
+    },
+    {
+      "district_id": "dhaka",
+      "district_name_bn": "ঢাকা",
+      "district_name_en": "Dhaka",
+      "upazilas": [
+        {
+          "id": "savar",
+          "name_bn": "সাভার",
+          "name_en": "Savar"
+        }
+      ]
+    },
+    {
+      "district_id": "bogura",
+      "district_name_bn": "বগুড়া",
+      "district_name_en": "Bogura",
+      "upazilas": [
+        {
+          "id": "bogura_sadar",
+          "name_bn": "বগুড়া সদর",
+          "name_en": "Bogura Sadar"
+        }
+      ]
+    }
+  ]
+}
