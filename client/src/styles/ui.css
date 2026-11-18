@@ -1,0 +1,303 @@
+/* =====================================================
+   AGRISENSE BD — SHARED UI COMPONENTS
+   তথ্যসূত্র, ঝুঁকি ব্যাজ, ব্যাখ্যা প্যানেল, তথ্য-নেই বক্স
+   সব রং index.css-এর token থেকে আসে।
+   ===================================================== */
+
+/* ---------- যাচাইয়ের অবস্থা (ব্যাজ) ---------- */
+
+.ui-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid var(--border-dark);
+  border-radius: 999px;
+  background: var(--surface-muted);
+  color: var(--text-secondary);
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.ui-status--verified {
+  border-color: #cce8d2;
+  background: #edf7ef;
+  color: var(--primary-dark);
+}
+
+.ui-status--pending {
+  border-color: var(--warning-border);
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+/* ---------- তথ্যসূত্র কার্ড ---------- */
+
+.ui-source {
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.ui-source-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.ui-source-title {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ui-source-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+}
+
+.ui-source-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ui-source-row dt {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.ui-source-row dd {
+  margin: 0;
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+
+.ui-source-row a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.ui-source-missing {
+  color: var(--warning-text);
+  font-weight: 600;
+}
+
+/* ---------- সম্ভাব্য ঝুঁকি ব্যাজ ---------- */
+
+.ui-risk {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.ui-risk-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.ui-risk--none {
+  border-color: #cce8d2;
+  background: #edf7ef;
+  color: var(--primary-dark);
+}
+
+.ui-risk--possible {
+  border-color: var(--warning-border);
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.ui-risk--high {
+  border-color: #f0c6c6;
+  background: #fff1f1;
+  color: #8a2b2b;
+}
+
+.ui-risk--unknown {
+  border-color: var(--border-dark);
+  background: var(--surface-muted);
+  color: var(--text-secondary);
+}
+
+.ui-disclaimer {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border: 1px solid var(--warning-border);
+  border-radius: var(--radius-md);
+  background: var(--warning-bg);
+  color: var(--warning-text);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* ---------- "কেন এই পরামর্শ?" ভাঁজ করা অংশ ---------- */
+
+.ui-explain {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.ui-explain summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  color: var(--primary-dark);
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+
+.ui-explain summary::-webkit-details-marker {
+  display: none;
+}
+
+.ui-explain summary::after {
+  content: "+";
+  font-size: 20px;
+  line-height: 1;
+}
+
+.ui-explain[open] summary::after {
+  content: "−";
+}
+
+.ui-explain[open] summary {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-muted);
+}
+
+.ui-explain-body {
+  display: grid;
+  gap: 10px;
+  padding: 16px 18px;
+}
+
+.ui-explain-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ui-explain-row dt {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.ui-explain-row dd {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+/* ---------- তথ্য যাচাই হয়নি / পাওয়া যায়নি বক্স ---------- */
+
+.ui-unavailable {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  border: 1px dashed var(--border-dark);
+  border-radius: var(--radius-md);
+  background: var(--surface-muted);
+}
+
+.ui-unavailable-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.ui-unavailable h3 {
+  margin: 0 0 4px;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.ui-unavailable p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* ---------- সর্বশেষ আপডেটের সময় ---------- */
+
+.ui-freshness {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ---------- লোডিং ---------- */
+
+.ui-skeleton {
+  height: 16px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(
+    90deg,
+    var(--surface-muted) 25%,
+    var(--border) 50%,
+    var(--surface-muted) 75%
+  );
+  background-size: 200% 100%;
+  animation: ui-shimmer 1.4s infinite linear;
+}
+
+@keyframes ui-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* ---------- মোবাইল ---------- */
+
+@media (max-width: 520px) {
+  .ui-source-row,
+  .ui-explain-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .ui-unavailable {
+    flex-direction: column;
+  }
+}

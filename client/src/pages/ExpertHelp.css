@@ -1,0 +1,181 @@
+.expert-page {
+  background: var(--background);
+  padding-bottom: 56px;
+}
+
+.expert-content {
+  display: grid;
+  gap: 18px;
+  padding-top: 24px;
+}
+
+.expert-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.expert-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px;
+  font-size: 19px;
+  color: var(--text-primary);
+}
+
+.expert-card--main {
+  border-color: var(--green-600);
+}
+
+.expert-card--soon,
+.expert-card--watch {
+  background: #fff8e8;
+  border-color: #f0dca8;
+}
+
+.expert-text {
+  margin: 0 0 14px;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+.expert-call {
+  min-height: 56px;
+  font-size: 18px;
+}
+
+.expert-note {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.expert-note svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.expert-note a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.expert-offices {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.expert-offices li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--surface-muted);
+}
+
+.expert-offices p {
+  margin: 6px 0 0;
+  line-height: 1.6;
+}
+
+.expert-offices a {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.expert-pending {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+}
+
+.expert-badge {
+  flex-shrink: 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.expert-field {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.expert-field textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text-primary);
+  resize: vertical;
+}
+
+.expert-summary {
+  margin: 14px 0;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--surface-muted);
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  color: var(--text-primary);
+}
+
+.expert-copy {
+  min-height: 48px;
+}
+
+.expert-ok {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0 0;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.expert-tips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.expert-tips li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.expert-tips svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--primary);
+}

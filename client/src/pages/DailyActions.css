@@ -1,0 +1,197 @@
+.today-page {
+  background: var(--background);
+  padding-bottom: 56px;
+}
+
+.today-content {
+  display: grid;
+  gap: 18px;
+  padding-top: 24px;
+}
+
+.today-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.today-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  font-size: 19px;
+  color: var(--text-primary);
+}
+
+.today-card--watch {
+  background: #fff8e8;
+  border-color: #f0dca8;
+}
+
+.today-card--watch p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+.today-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.today-clear {
+  min-height: 40px;
+  padding: 8px 14px;
+}
+
+.today-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 14px;
+}
+
+.today-field {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.today-field select,
+.today-field input {
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.today-outlook {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.today-day {
+  background: var(--surface-muted);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.today-day h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  color: var(--primary-dark);
+}
+
+.today-day p {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.today-day svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--primary);
+}
+
+.today-alerts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.today-alerts li {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #fff8e8;
+  border: 1px solid #f0dca8;
+}
+
+.today-alerts svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #b7791f;
+}
+
+.today-alerts p {
+  margin: 4px 0 0;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.today-big {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-primary);
+}
+
+.today-big strong {
+  color: var(--primary-dark);
+  font-size: 26px;
+}
+
+.today-empty {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.today-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 14px 0 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.today-note svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+@media (max-width: 820px) {
+  .today-form,
+  .today-outlook {
+    grid-template-columns: 1fr;
+  }
+}
+.today-field-note {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.today-field-note button {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  color: var(--primary-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
