@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700;800&display=swap');
+
+/* =====================================================
+   AGRISENSE BD — DESIGN TOKENS & GLOBAL BASE
+   সব রং, দূরত্ব, shadow এখানে একবারই define হবে।
+   ===================================================== */
+
+:root {
+  /* Typography */
+  font-family: "Hind Siliguri", system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Brand colors */
+  --green-900: #123c2b;
+  --green-800: #185638;
+  --green-700: #24764a;
+  --green-600: #318b59;
+  --green-100: #e8f3eb;
+  --green-50: #f5f9f5;
+
+  --primary: #24764a;
+  --primary-dark: #185638;
+  --primary-light: #e8f3eb;
+
+  /* Surfaces */
+  --background: #f7faf7;
+  --surface: #ffffff;
+  --surface-muted: #f1f6f2;
+
+  /* Text */
+  --text-primary: #20352a;
+  --text-secondary: #55685c;
+  --text-muted: #68796d;
+
+  /* Borders */
+  --border: #e5ece6;
+  --border-color: #e5ece6;
+  --border-dark: #c9d8cc;
+
+  /* Notice / warning palette (তথ্য যাচাই হয়নি ধরনের বার্তার জন্য) */
+  --warning-bg: #fff8e9;
+  --warning-border: #f0d9a8;
+  --warning-text: #70551f;
+  --warning-accent: #d49a30;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(18, 60, 43, 0.08);
+  --shadow-md: 0 8px 22px rgba(18, 60, 43, 0.1);
+  --shadow-lg: 0 18px 44px rgba(18, 60, 43, 0.14);
+
+  /* Layout */
+  --container-width: 1180px;
+
+  color: var(--text-primary);
+  background: var(--surface);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Hind Siliguri", system-ui, sans-serif;
+  color: var(--text-primary);
+  background: var(--surface);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Keyboard accessibility */
+:focus-visible {
+  outline: 3px solid var(--green-600);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+/* যাদের device-এ animation কমানো আছে তাদের জন্য */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
