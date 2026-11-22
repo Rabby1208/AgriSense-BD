@@ -1,0 +1,108 @@
+.fc-figure {
+  margin: 16px 0 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.fc-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.fc-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fc-chart text {
+  font-family: inherit;
+  font-size: 15px;
+  fill: var(--text-primary);
+}
+
+.fc-label--small {
+  font-size: 13px;
+  fill: var(--text-secondary);
+}
+
+.fc-label--day {
+  font-weight: 700;
+  fill: var(--text-secondary);
+}
+
+.fc-line {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fc-line--max,
+.fc-dot--max {
+  stroke: #c2410c;
+}
+
+.fc-line--min,
+.fc-dot--min {
+  stroke: #1d6fb8;
+}
+
+.fc-dot--max {
+  fill: #c2410c;
+}
+
+.fc-dot--min {
+  fill: #1d6fb8;
+}
+
+.fc-bar {
+  fill: #5aa7d6;
+}
+
+.fc-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 6px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
+
+.fc-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fc-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+}
+
+.fc-swatch--max {
+  background: #c2410c;
+}
+
+.fc-swatch--min {
+  background: #1d6fb8;
+}
+
+.fc-swatch--rain {
+  background: #5aa7d6;
+}
+
+/* শুধু স্ক্রিন রিডারের জন্য */
+.fc-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
