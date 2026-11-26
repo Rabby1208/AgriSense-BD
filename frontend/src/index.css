@@ -1,0 +1,81 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Inter, Arial, sans-serif;
+  background: #ffffff;
+  color: #1d2b21;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.agrisense-auth-actions {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  display: flex;
+  gap: 10px;
+}
+
+.agrisense-auth-actions button {
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.agrisense-auth-actions button:first-child {
+  background: #1b5e20;
+  color: #fff;
+}
+
+.agrisense-auth-actions button:last-child {
+  background: #f4a62a;
+  color: #17251a;
+}
+
+.agrisense-auth-actions button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .agrisense-auth-actions {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .agrisense-auth-actions button {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+}
