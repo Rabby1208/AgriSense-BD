@@ -1,0 +1,651 @@
+
+.fms-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #24352b;
+}
+
+.fms-heading,
+.fms-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.fms-heading h2 {
+  margin: 5px 0;
+  font-size: 26px;
+}
+
+.fms-heading p,
+.fms-panel-heading p {
+  margin: 5px 0 0;
+  color: #718078;
+}
+
+.fms-eyebrow {
+  color: #25834b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.fms-refresh,
+.fms-primary,
+.fms-tabs button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.fms-refresh {
+  background: #edf4ef;
+  color: #28643d;
+}
+
+.fms-primary {
+  background: #238447;
+  color: white;
+}
+
+.fms-primary:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.fms-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fms-tabs button {
+  background: #edf2ee;
+  color: #53645a;
+}
+
+.fms-tabs button.selected {
+  background: #237e43;
+  color: white;
+}
+
+.fms-panel {
+  background: white;
+  border: 1px solid #e5ece6;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 5px 20px rgba(20, 55, 30, .04);
+}
+
+.fms-panel-heading {
+  margin-bottom: 20px;
+}
+
+.fms-panel-heading h3 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.fms-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 20px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  background: #f7faf7;
+}
+
+.fms-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #46584b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fms-form input,
+.fms-form select,
+.fms-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dce6de;
+  border-radius: 8px;
+  padding: 11px 12px;
+  background: white;
+  color: #25372b;
+  font: inherit;
+  outline: none;
+}
+
+.fms-form input:focus,
+.fms-form select:focus,
+.fms-form textarea:focus {
+  border-color: #27874b;
+  box-shadow: 0 0 0 3px rgba(39, 135, 75, .1);
+}
+
+.fms-full {
+  grid-column: 1 / -1;
+}
+
+.fms-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.fms-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.fms-table th,
+.fms-table td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #edf0ed;
+  text-align: left;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.fms-table th {
+  background: #f5f8f5;
+  color: #53645a;
+  font-weight: 800;
+}
+
+.fms-table td {
+  color: #34473a;
+}
+
+.fms-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 7px;
+  background: #fff0ef;
+  color: #c43e36;
+  cursor: pointer;
+}
+
+.fms-delete:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.fms-empty,
+.fms-loading {
+  padding: 42px 15px;
+  text-align: center;
+  color: #748078;
+}
+
+.fms-empty svg {
+  color: #4b9b62;
+}
+
+.fms-empty h3 {
+  margin: 10px 0 5px;
+  color: #34473a;
+}
+
+.fms-note {
+  padding: 13px 15px;
+  border-radius: 9px;
+  background: #f1f7ed;
+  color: #52704c;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.fms-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.fms-summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #e7eee8;
+  border-radius: 12px;
+  background: #f9fbf9;
+}
+
+.fms-summary-card svg {
+  color: #32834d;
+}
+
+.fms-summary-card span {
+  color: #718078;
+  font-size: 13px;
+}
+
+.fms-summary-card strong {
+  color: #263b2c;
+  font-size: 22px;
+}
+
+.fms-positive {
+  color: #238447 !important;
+}
+
+.fms-negative {
+  color: #c43e36 !important;
+}
+
+.fms-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.fms-alert span {
+  flex: 1;
+}
+
+.fms-alert button {
+  display: inline-flex;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fms-error {
+  background: #fff0ef;
+  color: #a8322c;
+}
+
+.fms-success {
+  background: #edf8ef;
+  color: #24733e;
+}
+
+.fms-spin {
+  animation: fms-spin 1s linear infinite;
+}
+
+@keyframes fms-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 700px) {
+  .fms-heading,
+  .fms-panel-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .fms-form,
+  .fms-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .fms-panel {
+    padding: 15px;
+  }
+
+  .fms-tabs button {
+    flex: 1 1 auto;
+  }
+}
+.fms-order-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.fms-order-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.fms-order-status.accepted {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.fms-order-status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.fms-order-status.rejected,
+.fms-order-status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.fms-order-actions {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.fms-accept,
+.fms-reject {
+  border: none;
+  border-radius: 6px;
+  padding: 7px 11px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.fms-accept {
+  background: #198754;
+  color: white;
+}
+
+.fms-reject {
+  background: #dc3545;
+  color: white;
+}
+
+.fms-accept:hover {
+  background: #146c43;
+}
+
+.fms-reject:hover {
+  background: #bb2d3b;
+}
+
+/* ======================================
+   INCOMING ORDER SUMMARY
+====================================== */
+
+.fms-order-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 22px 0;
+}
+
+.fms-order-summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.fms-order-summary-card svg {
+  color: #16834a;
+}
+
+.fms-order-summary-card span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.fms-order-summary-card strong {
+  color: #172b22;
+  font-size: 25px;
+}
+
+/* ======================================
+   ORDER LIST
+====================================== */
+
+.fms-order-list {
+  display: grid;
+  gap: 16px;
+}
+
+.fms-order-card {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.fms-order-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.fms-order-id {
+  color: #16834a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.fms-order-card-header h3 {
+  margin: 6px 0 0;
+  color: #172b22;
+  font-size: 19px;
+}
+
+.fms-order-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.fms-order-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.fms-order-status.accepted {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.fms-order-status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.fms-order-status.rejected,
+.fms-order-status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* ======================================
+   ORDER DETAILS
+====================================== */
+
+.fms-order-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding: 18px 0;
+}
+
+.fms-order-details > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.fms-order-details span {
+  color: #718096;
+  font-size: 12px;
+}
+
+.fms-order-details strong {
+  color: #26372e;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.fms-order-details .fms-order-amount {
+  color: #16834a;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.fms-order-address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 10px 12px;
+  margin-bottom: 9px;
+  border-radius: 7px;
+  background: #f7faf8;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.fms-order-address strong {
+  color: #344b3d;
+}
+
+.fms-order-address span {
+  color: #64748b;
+}
+
+/* ======================================
+   ORDER ACTIONS
+====================================== */
+
+.fms-order-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 15px;
+  border-top: 1px solid #edf0f2;
+}
+
+.fms-order-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+}
+
+.fms-accept,
+.fms-reject,
+.fms-complete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.fms-accept {
+  background: #198754;
+}
+
+.fms-accept:hover {
+  background: #146c43;
+}
+
+.fms-reject {
+  background: #dc3545;
+}
+
+.fms-reject:hover {
+  background: #bb2d3b;
+}
+
+.fms-complete {
+  background: #1769aa;
+}
+
+.fms-complete:hover {
+  background: #125487;
+}
+
+.fms-accept:disabled,
+.fms-reject:disabled,
+.fms-complete:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.fms-completed-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #16834a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fms-rejected-label {
+  color: #dc3545;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media (max-width: 768px) {
+  .fms-order-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .fms-order-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fms-order-card {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fms-order-details {
+    grid-template-columns: 1fr;
+  }
+
+  .fms-order-card-header {
+    align-items: flex-start;
+  }
+
+  .fms-order-actions {
+    width: 100%;
+  }
+
+  .fms-order-actions button {
+    flex: 1;
+  }
+}
